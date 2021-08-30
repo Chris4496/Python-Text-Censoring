@@ -1,9 +1,10 @@
 import re
 
 
-with open("English.txt") as f:
+with open("English1.txt") as f:
     content = f.readlines()
 content = [word.strip() for word in content]
+content.reverse()
 
 
 def replaceCurseWords(UserChat):
